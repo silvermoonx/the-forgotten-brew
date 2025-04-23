@@ -171,7 +171,7 @@ export default function DialogueBox({
   const characterImage = getCharacterImage()
 
   return (
-    <div className="absolute left-0 right-0 mx-auto flex flex-col items-center z-50" style={{ top: "40%" }}>
+    <div className="absolute top-1/2 left-0 right-0 flex flex-col items-center z-50">
       {/* Main dialogue box - Typewriter style */}
       <div className="w-[80%] max-w-[800px] relative animate-fadeIn">
         {/* Character portrait */}

@@ -526,7 +526,7 @@ export default function Room0({ onExit, savedPosition, onPositionChange }: Room0
     return () => {
       window.removeEventListener("keydown", handleInventoryKey)
     }
-  }, [showInventory])
+  }, [])
 
   // Update the advanceDialogue function to also update the character type
   const advanceDialogue = () => {
@@ -651,6 +651,7 @@ export default function Room0({ onExit, savedPosition, onPositionChange }: Room0
   }, [showDialogue, isTyping, dialogueData])
 
   // Replace the existing player movement useEffect with this continuous movement system
+  // Find this useEffect (around line 200-240):
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       // Skip movement if inventory is open
